@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+  airsim_core:
+    container_name: airsim
+    image: airsim:1.8.1
+    privileged: true
+    networks:
+      - airsim_network
+    tty: true
+    environment:
+      - ROS_DOMAIN_ID=1
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
+      - XAUTHORITY=${XAUTH}
+      - SDL_VIDEODRIVER=
+      - SDL_HINT_CUDA_DEVICE=0
+    volumes:
+      - ${PWD}/settings.json:/home/airsim_user/Documents/AirSim/settings.json
+      - ${PWD}:/home/airsim_user/docker:rw
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - /tmp/.docker.xauth:/tmp/.docker.xauth:rw
+
+
+networks:
+  airsim_network:
+    driver: bridge

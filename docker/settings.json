@@ -11,9 +11,23 @@
       "EnableCollisions": true,
       "AllowAPIAlways": true,
       "RC": {
-        "RemoteControlID": 0,
+        "RemoteControlID": 1,
         "AllowAPIWhenDisconnected": false
       }
+    }
+  },
+  "Graphics": {
+    "EngineSettings": {
+      "r.ShadowQuality": 0,
+      "r.PostProcessQuality": 0,
+      "r.TextureQuality": 1,
+      "r.EffectsQuality": 0,
+      "r.ViewDistanceQuality": 1,
+      "r.AntiAliasingQuality": 0
+    },
+    "Resolution": {
+      "Width": 854,
+      "Height": 480
     }
   }
 }

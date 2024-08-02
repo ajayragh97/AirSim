@@ -1,0 +1,11 @@
+--2024-07-30 16:31:06--  https://www.nvidia.com/content/DriverDownloads/confirmation.php?url=/XFree86/Linux-x86_64/550.107.02/NVIDIA-Linux-x86_64-550.107.02.run
+Resolving www.nvidia.com (www.nvidia.com)... 88.221.221.104, 88.221.221.146, 88.221.221.114
+Connecting to www.nvidia.com (www.nvidia.com)|88.221.221.104|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2636 (2,6K) [text/html]
+Saving to: ‘confirmation.php?url=%2FXFree86%2FLinux-x86_64%2F550.107.02%2FNVIDIA-Linux-x86_64-550.107.02.run’
+
+                          confirmation.php?url=%2FXF   0%[                                                                                                                      ]       0  --.-KB/s               confirmation.php?url=%2FXFree86%2FLinux-x86_64%2F550 100%[=====================================================================================================================>]   2,57K  --.-KB/s    in 0s      
+
+2024-07-30 16:31:06 (1,38 GB/s) - ‘confirmation.php?url=%2FXFree86%2FLinux-x86_64%2F550.107.02%2FNVIDIA-Linux-x86_64-550.107.02.run’ saved [2636/2636]
+

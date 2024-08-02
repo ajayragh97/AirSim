@@ -1,12 +1,10 @@
-ARG BASE_IMAGE=nvidia/cudagl:10.0-devel-ubuntu18.04
+ARG BASE_IMAGE=nvidia/cudagl:11.3.0-devel-ubuntu20.04
 FROM $BASE_IMAGE
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=Etc/UTC
 
 # NVIDIA key issue rectification
-RUN rm /etc/apt/sources.list.d/cuda.list
-RUN rm /etc/apt/sources.list.d/nvidia-ml.list
 RUN apt-key del 7fa2af80
 RUN apt-get update && apt-get install -y --no-install-recommends wget
 RUN wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-keyring_1.0-1_all.deb
@@ -45,7 +43,7 @@ RUN apt install -y nvidia-settings vulkan-utils vulkan-tools
 
 RUN apt install -y ubuntu-drivers-common
 
-RUN apt-get install -y nvidia-driver-535
+RUN apt-get install -y nvidia-driver-550
 
 RUN pip install opencv-contrib-python==4.5.5.64 --verbose
 

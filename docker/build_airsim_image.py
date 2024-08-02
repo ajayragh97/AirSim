@@ -20,7 +20,7 @@ def build_docker_image(args):
             args.target_image = 'airsim_source' + ':' + target_image_tag
 
     else:
-        dockerfile = 'Dockerfile_binary'
+        dockerfile = 'Dockerfile_20_04'
         if not args.base_image:
             args.base_image = "nvidia/cudagl:10.0-devel-ubuntu18.04"
         target_image_tag = args.base_image.split(":")[1] # take tag from base image
